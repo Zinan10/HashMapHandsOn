@@ -8,23 +8,63 @@ public class HashMapDemo {
     public void Start() {
         //HashMap Initialisation
         HashMap<String, Integer> cards = new HashMap<>(); //String and Integer parameters required
+        HashMap<String, Integer> cardsDummy = new HashMap<>();
 
         //HashMap put() method
-        cards.put("2", 2);
-        cards.put("3", 3);
-        cards.put("J", 10);
+        //Adds data into the HashMap
+//        cards.put("2", 2);
+//        cards.put("3", 3);
+//        cards.put("J", 10);
 
-        Printer.print(cards);
+//        Printer.print(cards);
 
-        //Clear
-        cards.clear();
+        //Copies all the data from an existing HashMap
+        cardsDummy.putAll(cards);
+        Printer.print(cardsDummy);
 
-        Printer.print(cards);
+        //Hashmap clear() method
+        //Removes every item inside the HashMap
+//        cards.clear();
 
-        //Adding data
+        //HashMap isEmpty() method
+//        Printer.print(cards.isEmpty());
+
+//        Printer.print(cards);
+
+        //Add all data
         HashMapData.addCards(cards); //Passing in a reference to the object; Hence no return required
+//        Printer.print(cards); //Displaying what's added
 
-        Printer.print(cards);
+        //Returns the size of the HashMap
+//        Printer.print(cards.size());
+
+        //HashMap get() method
+        //Uses KEY as argument; Returns value
+//        Printer.print(cards.get("K"));
+
+        //HashMap containsKey() method
+        //Returns true if one or more key is mapped to a specified key; false if not
+//        Printer.print(cards.containsKey("k")); //Returns? (show data)
+//        Printer.print(cards.containsKey("5")); //Returns?
+
+        //HashMap containsValue() method
+        //Return true if one or more values is mapped to a specified value; false if not
+//        Printer.print(cards.containsValue("5")); //Returns? (change)
+
+        //Displaying the HashMap
+//        Printer.printInitialHashMap(cards);
+
+        //Displaying the cloned HashMap
+//        Printer.printClonedHashMap(cards.clone());
+
+        // ---------- Set functionality ----------
+        //Returns a "Set" data structure with the same elements as the HashMap
+//        Printer.print(cards.entrySet()); //Notice the brackets!
+
+        //Returns a set view of the keys
+//        Printer.print(cards.keySet());
+
+
 
 
 
@@ -32,25 +72,6 @@ public class HashMapDemo {
 }
 
 /*
-    void clear(): Used to remove all mappings from a map.​
-
-boolean containsKey(Object key): Used to return True if for a specified key, mapping is present in the map.​
-
-boolean containsValue(Object value): Used to return true if one or more key is mapped to a specified value.​
-
-Object clone(): It is used to return a shallow copy of the mentioned hash map.​
-
-boolean isEmpty(): Used to check whether the map is empty or not. Returns true if the map is empty.​
-
-Set entrySet(): It is used to return a set view of the hash map.​
-
-Object get(Object key): It is used to retrieve or fetch the value mapped by a particular key.​
-
-Set keySet(): It is used to return a set view of the keys.​
-
-int size(): It is used to return the size of a map.​
-
-Object put(Object key, Object value): It is used to insert a particular mapping of key-value pair into a map.​
 
 putAll(Map M): It is used to copy all of the elements from one map into another.​
 
