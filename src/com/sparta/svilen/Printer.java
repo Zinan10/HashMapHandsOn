@@ -16,21 +16,12 @@ public class Printer {
         System.out.println("The cloned HashMap looks like this: " + hashMapClone);
     }
 
-
-
-    public static void valueOfKey(Map.Entry<String, Integer> entry)
-    {
+    public static void valueOfKey(Map.Entry<String, Integer> entry) {
         System.out.println(" The value of this key " + entry.getKey().toString() + " is " + entry.getValue());
-
-
     }
 
-    public static void valueOfKey(Map.Entry<String, Integer> entry , int addUp)
-    {
-
+    public static void valueOfKey(Map.Entry<String, Integer> entry , int addUp) {
         System.out.println(" The value of the old key " + entry.getKey().toString() + " + " + addUp + " is " + (entry.getValue() + addUp));
-
-
     }
 
 
