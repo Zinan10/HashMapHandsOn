@@ -16,13 +16,16 @@ public class Printer {
         System.out.println("The cloned HashMap looks like this: " + hashMapClone);
     }
 
+    public static void printKeyValue(String key, Integer value) {
+        System.out.println("The value for '" + key + "' is... " + value);
+    }
+
+    //Emmanuel
     public static void valueOfKey(Map.Entry<String, Integer> entry) {
-        System.out.println(" The value of this key " + entry.getKey().toString() + " is " + entry.getValue());
+        System.out.println(" The value of this key " + entry.getKey()+ " is " + entry.getValue());
     }
 
     public static void valueOfKey(Map.Entry<String, Integer> entry , int addUp) {
-        System.out.println(" The value of the old key " + entry.getKey().toString() + " + " + addUp + " is " + (entry.getValue() + addUp));
+        System.out.println(" The value of the old key " + entry.getKey() + " + " + addUp + " is " + (entry.getValue() + addUp));
     }
-
-
 }
