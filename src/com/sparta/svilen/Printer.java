@@ -28,4 +28,12 @@ public class Printer {
     public static void valueOfKey(Map.Entry<String, Integer> entry , int addUp) {
         System.out.println(" The value of the old key " + entry.getKey() + " + " + addUp + " is " + (entry.getValue() + addUp));
     }
+
+    public static void print10Count(Map.Entry<String, Integer> entry) {
+        System.out.println("The " + entry.getKey() + " card has a value of 10");
+    }
+
+    public static void printKeys(Map.Entry<String, Integer> entry) {
+        System.out.println(" The " + entry.getValue() + " Value has a key of: " + entry.getKey());
+    }
 }

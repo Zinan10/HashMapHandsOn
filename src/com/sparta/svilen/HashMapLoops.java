@@ -16,11 +16,19 @@ public class HashMapLoops {
             Printer.valueOfKey(entry , 1);
         }
     }
-}
 
-/*
-TODO: USE keySet()
-for (String i : capitalCities.keySet()) {
-        System.out.println(i);
+    public static void hashMap10Count(HashMap<String, Integer> theCards) {
+        for (HashMap.Entry<String, Integer> entry : theCards.entrySet()) {
+            if(entry.getValue().equals(10)) {
+                Printer.print10Count(entry);
+            }
+        }
     }
- */
+
+    public static void hashMapKeyPrint(HashMap<String, Integer> theCards) {
+        for (HashMap.Entry<String, Integer> entry : theCards.entrySet()) {
+            Printer.printKeys(entry);
+        }
+    }
+
+}

@@ -101,7 +101,7 @@ public class HashMapDemo {
 
         //HashMap forEach() method
 //        cards.forEach((key, value) -> System.out.println("The value of key '" + key + "' is... " + value)); //Pre-Sparta Global way
-//        cards.forEach((k, val) -> Printer.printKeyValue(k, val)); //One step close to the pros
+//        cards.forEach((k, val) -> Printer.printKeyValue(k, val)); //One step closer to the pros
 //        cards.forEach(Printer::printKeyValue); //How the pros do it
 
         //HashMap getOrDefault() method
